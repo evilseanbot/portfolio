@@ -1,0 +1,62 @@
+US Servas Online Host List
+- PHP
+- SQL (PostgreSQL)
+- PHP libraries (FPDF, FPDI)
+
+Ball Of Hate
+- Javascript
+- JQuery
+- JQuery UI
+- SQL
+- AJAX
+
+Death Stats
+- Javascript (HTML5, CSS3)
+- angular.js
+- Twitter Bootstrap
+- ui-bootstrap
+- angulas.js modules (slider.js)
+
+Crafty Particle Editor
+- Javascript (HTML5, CSS3)
+- Jquery
+- Git
+- Ajax
+- JSON
+
+GAMES:
+
+* Prince of Leaves
+  - Java
+  - Slick2D
+  - Json
+  - Tiled
+  
+* Dog Days Are Done
+  - Javascript (HTML5, CSS3)
+  - Git
+  - Ajax
+  - Crafty.js
+  - Tiled
+  
+* I Dream In Color
+  - Javascript (HTML5, CSS3)
+  - Git
+  - Canvas
+  - Crafty.js
+
+* Place Of Origin
+  - Java
+  - Crafty.js
+  - Tiled
+  
+* I Hate Being Delicious
+  - Javascript (HTML5, CSS3)
+  - Canvas
+  
+* Black Hole Pants
+  - Java
+  - Slick2D?
+  
+* Rubbish Barrage
+  - C++

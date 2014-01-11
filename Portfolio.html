@@ -1,0 +1,128 @@
+<html ng-app="portfolio">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="portfolio.css">
+    <script>
+
+        angular.module('portfolio', []);
+        function Ctrl($scope, $http) {      
+            $scope.dramaFreeDescDisplay = false;
+            $scope.deathStatsDescDisplay = false;
+            $scope.hostListDescDisplay = false;
+
+            $scope.indexDisplayed = true;
+
+            $scope.showDesc = function(desc) {
+                $scope.indexDisplayed = false;
+                $scope[desc] = true;
+            }
+
+            $scope.showIndex = function() {
+                $scope.indexDisplayed = true;
+                $scope.dramaFreeDescDisplay = false;
+                $scope.deathStatsDescDisplay = false;
+                $scope.hostListDescDisplay = false;
+
+            }
+        }
+
+    </script>
+</head>
+<body ng-controller="Ctrl">
+    <div class='container'>
+    	<div id='main'>
+            <div id='navbar'>
+                <span ng-click='showIndex()'>Home</span>
+            </div>
+            <div id='titleBar'>
+                <h1>Seanna Musgrave portfolio</h1>
+            </div>            
+            <div id='index' ng-show='indexDisplayed'>
+    		    <div class='portItem' ng-click='showDesc("deathStatsDescDisplay")'>
+    		        <img class='portScreenshot' src='DeathStatsSmall.png'/>
+    		        <p class='projectTitle'>Death stats</p>
+    		    </div>
+    		    <div class='portItem' id='DramaFree' ng-click='showDesc("dramaFreeDescDisplay")'>
+    		        <img class='portScreenshot' src='DramaFreeSmall.png'/>
+    		        <p class='projectTitle'>Drama Free</p>
+    		    </div>
+                <div class='portItem' id='HostList' ng-click='showDesc("hostListDescDisplay")'>
+                    <img class='portScreenshot' src='HostList.png'/>
+                    <p class='projectTitle'>Host List for U.S. Servas</p>
+                </div>
+
+            </div>
+		    <div id='dramaFreeDesc' ng-show='dramaFreeDescDisplay'>
+		        <img class='portScreenshot' src='DramaFreeSmall.png'/>
+                <p><a href='http://www.transfixedgames.com/BallOfHate/ballOfHate.html'>Website</a></p>
+                <p><a href='https://github.com/evilseanbot/BallOfHate'>Github</a></p>
+		        <p>Personal project</p>
+		        <p>Website to help with party planning, allows users to anonymously submit which of their friends have personal conflicts with their other friends, so anyone planning a party can search groups for personal conflicts.</p>
+
+		        <p>Tech: </p>
+		        <ul>
+		        	<li>HTML/CSS/Javascript</li>
+		        	<li>Facebook Graph API</li>
+		        	<li>jQuery</li>
+		        	<li>JQuery UI</li>
+		        	<li>Server-side Python</li>
+		        	<li>MySQL</li>
+		        </ul>
+
+		        <p>Features: </p>
+		        <ul>
+		        	<li>Autocomplete search string from users facebook friends</li>
+		        	<li>Fairly complex graph algoritihm to effieciently find group conflicts in minimal time. </li>
+		        </ul>
+                <h2 ng-click='showIndex()'>BACK TO OTHER PROJECTS</div>
+		    </div>
+            <div id='deathStatsDesc' ng-show='deathStatsDescDisplay'>
+                <img class='portScreenshot' src='DeathStatsSmall.png'/>
+                <p><a href='http://www.transfixedgames.com/DeathStats/DeathStats.html'>Website</a></p>
+                <p><a href='https://github.com/evilseanbot/DeathStats'>Github</a></p>
+                <p>Personal project</p>
+                <p>Website that allows people to see statistical probabilities of when they will die, along with probabilities of dying from different causes per year.</p>
+
+                <p>Tech: </p>
+                <ul>
+                    <li>HTML/CSS/Javascript</li>
+                    <li>Angular.js</li>
+                    <li>Server-side Python</li>
+                    <li>Twitter Bootstrap</li>
+                </ul>
+
+                <p>Features: </p>
+                <ul>
+                    <li>Reads CSV data gathered from the CDC on death probailities and causes by age and gender.</li>
+                </ul>
+                <h2 ng-click='showIndex()'>BACK TO OTHER PROJECTS</div>
+            </div>
+            <div id='hostListDesc' ng-show='hostListDescDisplay'>
+                <img class='portScreenshot' src='HostList.png'/>
+                <p>Website only available for members.</a></p>
+                <p><a href='https://github.com/evilseanbot/servas-host-list-gen'>Github</a></p>
+                <p>Project for U.S. Servas</p>
+                <p>This application generates PDFs for US Servas's Member listings from the Server.
+
+The files are generated natively in PDF format using the FPDF/FPDI libraries, in order to minimize size. The goals of the application is to be generate the file very quickly, at a reasonable size (Currenty 2.5MB), easily visually editable (The desired appearance of the host list changes frequently) and to be maintanable.</p>
+
+                <p>Tech: </p>
+                <ul>
+                    <li>PHP</li>
+                    <li>PostgreSQL</li>
+                    <li>FPDF/FPDI</li>
+                </ul>
+
+                <p>Features: </p>
+                <ul>
+                    <li>Generates a PDF on demand based on extensive data (21 tables) on U.S. Servas members.</li>
+                    <li>Dynamicly updated table of contents</li>
+                </ul>
+                <h2 ng-click='showIndex()'>BACK TO OTHER PROJECTS</div>
+            </div>
+
+
+		</div>
+	</div>
+</body>
+</html>

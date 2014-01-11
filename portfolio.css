@@ -1,0 +1,49 @@
+.portItem {
+	width: 350;
+	height: 350;
+	float: left;
+	/*border: 1px solid black;*/
+	padding: 10px;
+}
+
+#main {
+	background-color: white;
+
+}
+
+.portScreenshot {
+    width: 350px;
+}
+
+h1 {
+	text-align: center;
+}
+
+.projectTitle {
+	font-weight: bold;
+	text-align: center;
+}
+
+#titleBar {
+    background-color: #80d;
+    color: white;
+    padding: 10px;
+    border-top: 5px solid #408;
+    border-bottom: 5px solid #408;
+}
+
+body {
+    font-size: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;   
+    margin-right: 50px;
+}
+
+#navbar {
+    background-color: black;
+    color: white;
+    text-align: left;
+}
