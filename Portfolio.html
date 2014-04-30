@@ -1,5 +1,6 @@
 <html ng-app="portfolio">
 <head>
+    <title>Seanna Musgrave </title>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-animate.js"></script>    
     <link rel="stylesheet" type="text/css" href="portfolio.css">
@@ -23,6 +24,7 @@
                 $scope.dramaFreeDescDisplay = false;
                 $scope.deathStatsDescDisplay = false;
                 $scope.hostListDescDisplay = false;
+                $scope.gamesDescDisplay = false;                
                 document.body.scrollTop = document.documentElement.scrollTop = 0;
             }
         }
@@ -42,6 +44,10 @@
             <div id='content'>
                 <div id='index' ng-show='indexDisplayed'>
                     <div id='indexContent'>
+                        <div class='portItem' ng-click='showDesc("gamesDescDisplay")'>
+                            <img class='portScreenshot' src='dreamInColorSmall.png'/>
+                            <p class='projectTitle'>Various games</p>
+                        </div>                    
                         <div class='portItem' ng-click='showDesc("deathStatsDescDisplay")'>
                             <img class='portScreenshot' src='DeathStatsSmall.png'/>
                             <p class='projectTitle'>Death stats</p>
@@ -124,6 +130,48 @@
                     </ul>
                     <p><button ng-click='showIndex()'>Back to project index</button></p>
                 </div>
+                <div id='gamesDesc' class='desc' ng-show='gamesDescDisplay'>
+                    <img class='portScreenshot' src='dreamInColorSmall.png'/>
+                    <p>Motion Fencing
+                       <a href='http://chrisswordguy.itch.io/fencing-sim'>Itch.io</a>
+                    </p>
+                    <p>NanoMineBo
+                       <a href='http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=7902'>Play</a>
+                       | 
+                       <a href='https://github.com/evilseanbot/ld29'>Github</a>
+                    </p>
+                    <p>List of Regrets:
+                       <a href='https://github.com/evilseanbot/ld28'>Github</a>
+                    </p>
+                    <p>Dog Days are Done: 
+                       <a href='https://github.com/evilseanbot/LD25'>Github</a>
+                    </p>
+                    <p>I Dream in Color:
+                       <a href='https://github.com/evilseanbot/ld26'>Github</a>
+                    </p>
+                    <p>Imposter:
+                       <a href='https://github.com/evilseanbot/AsylumJamGame'>Github</a>
+                       Press 
+                       <a href="http://indiegames.com/2013/10/browser_pick_the_flies_have_co.html">1</a>
+                       <a href="http://oujevipo.fr/10-minutes/1019-imposter">2</a>
+                    </p>
+
+                    <h3>Personal Projects</h3>
+                    <p>I've developed many games for short-term game jams, including 7 games for the Ludum Dare competition, and 1 for the Asylum Game Jam and 1 for Global Game Jam of this year.</p>
+                    <p>I've mostly served as a role of lead programmer in teams of 1-5 other people composed of other programmers and artists (Occasinially working remotely through tools such as Skype and Dropbox), but I've also developed some games working by myself.</p>
+                    <p>Among the 6 games I've developed for Ludum Dare, which includes many strong professionial game developers, 3 were ranked in the top 6% in atleast 1 category, and 1 game ranked in the top 18% overall. The games I've developed have won consistently high marks for innovation.</p>
+
+                    <h3>Tech: </h3>
+                    <ul>
+                        <li>Javascript</li>
+                        <li>JQuery</li>
+                        <li>HTML5 Canvas</li>
+                        <li>Java</li>
+                        <li>Unity</li>
+                        <li>C++</li>
+                    </ul>
+                    <p><button ng-click='showIndex()'>Back to project index</button></p>
+                </div>                
             </div>
 		</div>
 	</div>

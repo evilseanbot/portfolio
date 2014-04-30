@@ -1,0 +1,80 @@
+LD Analysis:
+
+LD 28
+List of Regrets(Jam)
+Jam Entries: 780
+#44 Humor - 3.64 - 5.64%
+#201 Mood - 3.08 - 25.7%
+#251 Theme - 2.80 - 32.1%
+#255 Fun - 2.90 - 32.6%
+#263 Innovation - 2.85 - 33.7%
+#314 Graphics - 3.05 - 40.2%
+#353 Overall - 2.90 - 45%
+#364 Audio - 2.43 - 46.6%
+
+LD 26
+Jam Entries: 736
+I dream in color(Jam)
+#112 Innovation - 3.47 - 15.2%
+#141 Humor - 2.75 - 19%
+#202 Mood - 3.16 - 27.4%
+#268 Fun - 2.90 - 36.4%
+#299 Overall - 3.05 - 40.6%
+#353 Audio - 2.57 - 47.9%
+#375 Graphics - 2.82 - 50.9%
+#500 Theme - 2.46 - 67.9%
+
+LD 25
+Jam Entries: 425
+Dog Days Are Done
+#67 Innovation 3.39 - 15.76%
+#167 Mood 2.81 - 39.29%
+#196 Humor 2.37 - 46.11%
+#220 Audio 2.25 - 51.76%
+#223 Theme 2.95 - 52.47%
+#239 OVerall 2.71 - 56.23%
+#263 Fun 2.31 - 61.88%
+#319 Graphics 1.81 - 75.05%
+
+LD 24
+Place of Origin
+Jam Entries: 400
+#24 Mood - 3.63 - 6%
+#84 Audio - 3.19 - 21%
+#103 Innovation - 3.00 - 25.75%
+#137 Humor - 2.20 - 34.25%
+#147 Fun - 2.80 - 36.75%
+#155 Overall - 2.93 - 38.75%
+#190 Graphics - 2.68 - 47.5%
+#250 Theme - 1.73 - 62.5%
+
+LD 23
+Prince of leaves (Jam)
+Jam Entries: 330 
+#18 Audio - 3.94 - 5.45%
+#36 Humor - 3.36 - 10.9%
+#39 Mood - 3.47 - 11.8%
+#53 Fun - 3.31 - 16%
+#61 Overall - 3.46 - 18%
+#82 Graphics - 3.65 - 24.8%
+#117 Theme - 3.02 - 35.4%
+#196 Innovation 2.37 - 59.3%
+
+LD 22
+I Hate Being Delicious (Jam)
+Jam Entries: 174
+#26 Mood - 3.06 - 14.9%
+#40 Innovation - 2.86 - 22.9%
+#53 Theme - 2.69 - 30.4%
+#72 Audio - 2.59 - 41.3%
+#81 Humor - 1.81 - 46.5%
+#85 Overall - 2.61 - 48.8%
+#91 Fun - 2.26 - 52.2%
+#114 Graphics - 2.47 - 65%
+
+=======================
+
+Highest overall: Princee of leaves, 18%.
+Highest individual score: Prince of leaves, audio, 5.45%.
+Games that received >6% in at least one category: 3 (Prince of leaves, List of Regrets, Place of Origin)
+Total games: 6.
