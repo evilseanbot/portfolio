@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src='https://code.jquery.com/jquery-git2.min.js'></script>
         <script src='js/bootstrap.js'></script>
         <link rel="stylesheet" href="css/bootstrap.css">
 	    <style>
@@ -14,10 +15,10 @@
 	        	}
 	        }
 	        .portItem {
-	        	border: 2px solid #bbbbFF;
+	        	border: 2px solid #888888;
 	        	margin: auto;
-	        	//margin-top: 10px;
-	            //margin-bottom: 10px;
+	        	margin-top: 10px;
+	            margin-bottom: 10px;
 	            background-color: white;
 	        }
 
@@ -34,7 +35,7 @@
 	        }
 
 	        .image img {
-	        	border: 20px solid #222222;
+	        	border: 10px solid #222222;
 	        	border-radius: 2px;
 
 	        }
@@ -46,26 +47,64 @@
 
 	        #banner {
 	        	width: 100%;
-	        	background-image: url("diff4.png");
-	    	background-repeat: no-repeat;
-	    	background-position: center;
-	    	background-size: 100%;	        	
 	        	text-align: center;
-	        	height: 200px;
+	        	height: 120px;
 	        	color: black;
-	        	padding-top: 75px;
 	        }
 	     </style>
 	    <title>Seanna Musgrave's Portfolio</title>
 	</head>
 	<div id='banner'>
         <h1>Seanna Musgrave Portfolio</h1>
+        <div style='display: inline-block'>
+			<ul class="nav nav-tabs" id="myTab">
+			  <li class="active"><a data-toggle='tab' href="#web">Web Projects</a></li>
+			  <li><a data-toggle='tab' href="#work">Work</a></li>		  
+			  <li><a data-toggle='tab' href="#vr">VR</a></li>
+			</ul>			 
+		</div>
+	</div>
+ 
+<script>
+  /*$(function () {
+    $('#myTab a:last').tab('show');
+  })*/
+</script>        
 	</div>
 
-    <div class='container'>    
+    <div class='container'>   
+    <div class="tab-content">
+	<div class="tab-pane fade in active" id="web"> 
 	    <div class='portItem'>
 	        <div class='itemHalf image'>
-	            <img src='oralExam.png' style='width: 100%'>
+	            <img src='history_map.png' style='width: 100%'>
+	        </div>
+
+	        <div class='itemHalf imageDesc'>
+	            <h1>History Map</h1>
+	            <p><a class="btn btn-primary" role="button" href='http://historymap.meteor.com'>Website</a> - 
+	            <a class="btn btn-primary" role="button" href='https://github.com/evilseanbot/historymap'>Github</a></p>	            
+	            <h3>Personal project</h3>
+	            <p>I developed a directory of historical podcasts and videos tracked by subject matter region and time in meteor.
+                <h3>Stack: </h3>
+                <ul>
+                    <li>Meteor.js</li>
+                    <li>Jade/Stylus/Javascript</li>
+                    <li>MongoDB</li>
+                    <li>SVG</li>
+                </ul>
+
+                <h3>Features: </h3>
+                <ul>
+                    <li>Highly responsive interaction</li>
+                    <li>Immediate search results</li>
+                    <li>200 episodes of media tracked</li>
+                </ul>
+	        </div>
+	    </div>
+	    <div class='portItem'>
+	        <div class='itemHalf image'>
+	            <img src='oralexam.png' style='width: 100%'>
 	        </div>
 
 	        <div class='itemHalf imageDesc'>
@@ -74,7 +113,7 @@
 	            <a class="btn btn-primary" role="button" href='https://github.com/evilseanbot/oral-exam-app'>Github</a></p>	            
 	            <h3>Personal project</h3>
 	            <p>I worked with a surgeon to develop a website that would help prepare resident surgeons for the GSCE.
-                <h3>Tech: </h3>
+                <h3>Stack: </h3>
                 <ul>
                     <li>Ruby on Rails</li>
                     <li>HTML/CSS/Javascript</li>
@@ -92,33 +131,6 @@
 	    </div>
 	    <div class='portItem'>
 	        <div class='itemHalf image'>
-	            <img src='servas.png' style='width: 100%'>
-	        </div>
-
-	        <div class='itemHalf imageDesc'>
-	            <h1>US Servas</h1>
-	            <p><a class="btn btn-primary" role="button" href='http://www.transfixedgames.com/BallOfHate/ballOfHate.html'>Website</a></p>
-	            <h3>Professional project</h3>
-	            <p>I worked in a small office developing and maintaing various software features for U.S. Servas from 2011-2014
-                <h3>Tech: </h3>
-                <ul>
-                    <li>HTML/CSS/Javascript</li>
-                    <li>jQuery</li>
-                    <li>JQuery UI</li>
-                    <li>PHP</li>
-                    <li>PostgreSQL</li>
-                </ul>
-
-                <h3>Features: </h3>
-                <ul>
-                    <li>Membership management system with medium sized (100k records) database</li>
-                    <li>Several geographical applications for finding members</li>
-                </ul>
-	        </div>
-	    </div>
-
-	    <div class='portItem'>
-	        <div class='itemHalf image'>
 	            <img src='dramaFree2.png' style='width: 100%'>
 	        </div>
 
@@ -129,7 +141,7 @@
                <h3>Personal project</h3>
                 <p>Website to help with party planning, allows users to anonymously submit which of their friends have personal conflicts with their other friends, so anyone planning a party can search groups for personal conflicts.</p>
 
-                <h3>Tech: </h3>
+                <h3>Stack: </h3>
                 <ul>
                     <li>HTML/CSS/Javascript</li>
                     <li>Facebook Graph API</li>
@@ -158,7 +170,7 @@
                 <h3>Personal project</h3>
                 <p>Website that allows people to see statistical probabilities of when they will die, along with probabilities of dying from different causes per year.</p>
 
-                <h3>Tech: </h3>
+                <h3>Stack: </h3>
                 <ul>
                     <li>HTML/CSS/Javascript</li>
                     <li>Angular.js</li>
@@ -172,5 +184,66 @@
 	        </div>	    
 
 	    </div>
+	</div>
+
+	<div class="tab-pane fade" id="work">
+	    <div class='portItem'>
+	        <div class='itemHalf image'>
+	            <img src='servas.png' style='width: 100%'>
+	        </div>
+
+	        <div class='itemHalf imageDesc'>
+	            <h1>US Servas</h1>
+	            <p><a class="btn btn-primary" role="button" href='http://www.usservas.org'>Website</a></p>
+	            <h3>Professional project</h3>
+	            <p>I worked in a small office developing and maintaing various software features for U.S. Servas from 2011-2014
+                <h3>Stack: </h3>
+                <ul>
+                    <li>HTML/CSS/Javascript</li>
+                    <li>jQuery</li>
+                    <li>JQuery UI</li>
+                    <li>PHP</li>
+                    <li>PostgreSQL</li>
+                </ul>
+
+                <h3>Features: </h3>
+                <ul>
+                    <li>Membership management system with medium sized (100k records) database</li>
+                    <li>Several geographical applications for finding members</li>
+                </ul>
+	        </div>
+	    </div>
+	</div>
+
+	<div class="tab-pane fade" id="games"> </div>	
+	<div class="tab-pane fade" id="vr"> 
+	    <div class='portItem'>
+	        <div class='itemHalf image'>
+	            <img src='vrsotu.png' style='width: 100%'>
+	        </div>
+
+	        <div class='itemHalf imageDesc'>
+	            <h1>VR Scale of the Universe</h1>
+	            <p><a class="btn btn-primary" role="button" href='http://transfixed.itch.io/vr-scale-of-the-universe'>Website</a></p>
+	            <h3>VR Expierience</h3>
+	            <p>In my spare time, I developed a VR simulation of the world at various scales, from cell nucleus to the universe as a whole.
+                <h3>Stack: </h3>
+                <ul>
+                    <li>Unity</li>
+                    <li>C#</li>
+                    <li>Oculus Rift SDK</li>
+                </ul>
+
+                <h3>Features: </h3>
+                <ul>
+                    <li>Inverse-kinematic avatar</li>
+                    <li>World that scales from 0.1 milimeter to 28 billion parsecs.
+                    <li>High comfort level</li>
+                </ul>
+	        </div>
+	    </div>
+
+	</div>		
+	</div>
 	</div>
 </html>
